@@ -1,4 +1,4 @@
-## PANACEA(exPlAinability-based eNsemble Adversarialtraining for Cyber-thrEAt detection),
+## PANACEA(exPlAinability-based eNsemble Adversarial training for Cyber-thrEAt detection),
 
 
 
