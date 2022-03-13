@@ -38,17 +38,14 @@ def load_all_models(testPath):
 
 def predict_individual_model(members ,test_scaler ,y_test, testPath):
     counter = 0
-    ''''
     for model in members:
+    # The Prediction will be saved in the directory
 
         prediction = model.predict(test_scaler)
         prediction = np.argmax(prediction, axis=1)
-        # _,Accuracy  = model.evaluate(testX, test_enc)
         Accuracy = accuracy_score(y_test, prediction)
-        # print('Model_', str(counter), str(' : '), 'Accuracy : ', Accuracy)
         Confusion_matrix = confusion_matrix(y_test, prediction)
         Classification_report = classification_report(y_test, prediction)
-        # print('Model _', str(counter), str(' : '), Classification_report, Confusion_matrix)
 
         report_name = testPath + 'Model_Predict_ ' + str(counter) + '.txt'
         try:
@@ -58,26 +55,3 @@ def predict_individual_model(members ,test_scaler ,y_test, testPath):
         name = 'Model_ ' + str(counter)
         report(report_name, Accuracy, Confusion_matrix, Classification_report, name)
         counter += 1
-'''''
-
-    for model in members:
-        train_scaler, test_scaler, y_train, y_test = Preprocessing.read_CIC_MalDroid2020_Dataset()
-
-        prediction = model.predict(train_scaler)
-        prediction = np.argmax(prediction, axis=1)
-        # _,Accuracy  = model.evaluate(testX, test_enc)
-        Accuracy = accuracy_score(y_train, prediction)
-        # print('Model_', str(counter), str(' : '), 'Accuracy : ', Accuracy)
-        Confusion_matrix = confusion_matrix(y_train, prediction)
-        Classification_report = classification_report(y_train, prediction)
-        # print('Model _', str(counter), str(' : '), Classification_report, Confusion_matrix)
-
-        report_name = testPath + 'Model_Predict_ ' + str(counter) + '.txt'
-        try:
-            os.remove(report_name)
-        except:
-            print('')
-        name = 'Model_ ' + str(counter)
-        report(report_name, Accuracy, Confusion_matrix, Classification_report, name)
-        counter += 1
-

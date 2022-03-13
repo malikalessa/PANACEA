@@ -6,7 +6,7 @@ import Global_Config as gc
 ################ NSL-KDD Dataset ####################33
 def read_NSL_KDD_Dataset():
 
-    path = 'E:/Processed_Dataset/NSL-KDD/'
+    path = gc.NSL_KDD_Original_Dataset
     train_dataset  =  pd.read_csv(path +'train_numeric.csv')
     test_dataset = pd.read_csv( path + 'test_numeric.csv')
     y_train = train_dataset['attack']
@@ -53,7 +53,7 @@ def read_T_A_Datasets_NSL(train_dataset,y_train,dataset_no):
 ############ UNSW Dataset ##########################
 def read_UNSW_Dataset():
 
-    path = 'E:/Processed_Dataset/UNSW-NB15_label_encoder/'
+    path = gc.UNSW_Original_Dataset
 
     train_dataset = pd.read_csv(path + 'train.csv')
     test_dataset = pd.read_csv(path + 'test.csv')
@@ -110,11 +110,11 @@ def read_CICIDS_Dataset():
 
     path = './'
 
-    train_dataset = pd.read_csv(path + )
-    test_dataset = pd.read_csv( path + )
+    train_dataset = pd.read_csv(path +'train.csv' )
+    test_dataset = pd.read_csv( path + 'test.csv')
 
-    y_train = train_dataset[ ]
-    y_test = test_dataset[ ]
+    y_train = train_dataset[ 'cc']
+    y_test = test_dataset[ 'cc']
     try:
         train_dataset.drop([  ], axis = 1, inplace=True)
     except IOError:
@@ -140,11 +140,11 @@ def read_T_A_Datasets_CICIDS(train_dataset,y_train,dataset_no):
     path = gc.CIC_IDS_Datasets
 
     train_adv_samples  =  pd.read_csv(path +'T_A_Dataset_CICIDS'+str(dataset_no)+'.csv')
-    y_train_adv = train_adv_samples[   ]
+    y_train_adv = train_adv_samples[ 'cc'  ]
     print(train_adv_samples.columns)
 
     try:
-        train_adv_samples.drop([    ], axis = 1, inplace=True)
+        train_adv_samples.drop([ 'cc'   ], axis = 1, inplace=True)
     except IOError:
         print('IOERROR')
     print('Adv Columns : ', train_adv_samples.columns)
@@ -166,7 +166,7 @@ def read_T_A_Datasets_CICIDS(train_dataset,y_train,dataset_no):
 ########################  CIC_MaldDroid2020 ###########3
 
 def read_CIC_MalDroid2020_Dataset():
-    path = 'E:/Processed_Dataset/CICMalDroid2020/'
+    path = gc.Maldroid20_Original_Dataset
 
     train_dataset = pd.read_csv(path + 'train_scaler_70%.csv')
     test_dataset = pd.read_csv(path + 'test_scaler_30%.csv')
