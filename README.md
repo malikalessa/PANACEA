@@ -2,12 +2,15 @@
 
 
 
+
 ### The repository contains code refered to the work:
+
 Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
 ### A XAI-based approach to maximize diversity in ensembles learned with adversarial training for cyber-defense
 
 ![PANACEA](https://user-images.githubusercontent.com/38468857/158059984-f12b6302-9d07-49ae-8a59-aed1f796af6b.png)
+
 
 
 ### Code Requirements
