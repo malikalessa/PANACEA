@@ -58,22 +58,20 @@ In the repository there are :
 ## Replicate the Experiments
 
 To replicate the experiments of this work, the models and datasets that have been saved in [Datasets and Models](https://drive.google.com/drive/folders/1KnGoU2l1dxVQxIpq8AX9dAzTHuCl-_I5) can be used. The dataset Path in Preporcessing file must be configured, and the following variable must be changed :
-  1. NSL_KDD_Original_Dataset = './' # To read Original Dataset
-  2. NSL_KDD_datset = './' # To save and read Adversarial Samples
-  3. NSL_KDD_Models = './'  # To save and read Baseline Models
+  1. NSL_KDD_Original_Dataset = './'       #To read Original Dataset
+  2. NSL_KDD_datset = './'                 #To save and read Adversarial Samples
+  3. NSL_KDD_Models = './'                 # To save and read Baseline Models
 
-  4. Maldroid20_Original_Dataset =  './'   # To read Original Dataset
-  5. Maldroid20_Datasets = './' # To save and read Adversarial Samples
-  6. Maldroid_20_Models = './'  # To save and read Baseline Models
+  4. Maldroid20_Original_Dataset =  './'   #To read Original Dataset
+  5. Maldroid20_Datasets = './'            #To save and read Adversarial Samples
+  6. Maldroid_20_Models = './'             #To save and read Baseline Models
 
+  7. UNSW_Original_Dataset = './'          #To read original Dataset
+  8. UNSW_Datasets = './'                  #To save and read Adversarial Samples
+  9. UNSW_Models = './'                    #To save and read baseline Models
 
-  7. UNSW_Original_Dataset = './' # To read original Dataset
-  8. UNSW_Datasets = './'  # To save and read Adversarial Samples
-  9. UNSW_Models = './'  # To save and read  baseline Models
-
-
-  10. CIC_IDS_Original_Dataset ='./'  # To read Original Dataset
-  11. CIC_IDS_Datasets = './' # To save and read Adversarial Samples
-  12. CIC_IDS_Models = './'  # To save and read baseline Models
+  10. CIC_IDS_Original_Dataset ='./'       #To read Original Dataset
+  11. CIC_IDS_Datasets = './'              #To save and read Adversarial Samples
+  12. CIC_IDS_Models = './'                #To save and read baseline Models
 
 
