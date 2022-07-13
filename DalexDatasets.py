@@ -69,7 +69,8 @@ class DalexDatasets():
         path = self.ds.get('pathDalexDataset') + self.ds.get('Dataset_name') + '_Dalex.csv'
         df = pd.read_csv(path)
         print('The Dalex File has been uploaded')
-        return df
+        n_models = int(self.config.get('NUMBER_OF_MODELS'))
+        return df[:n_models]
 
     def Clustering_Medoids(self):
 
