@@ -83,6 +83,7 @@ class DalexDatasets():
             df = DalexDatasets.loadDalexDatasets(self)
         else :
             print(' You must create Dalex File ...')
+            exit(1)
 
         kmedoids = KMedoids(init='k-medoids++', method='pam', random_state=42)
         print(df.head())
