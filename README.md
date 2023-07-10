@@ -1,4 +1,4 @@
-## PANACEA(exPlAinability-based eNsemble Adversarial training for Cyber-thrEAt detection),
+## PANACEA: A Neural Model Ensemble for Cyber-Threat Detection
 
 
 
