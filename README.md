@@ -1,9 +1,9 @@
-## PANACEA: A Neural Model Ensemble for Cyber-Threat Detection
+## PANACEA:  (exPlAinability-based eNsemble Adversarial training for Cyber-thrEAt detection)
 
 
 
 
-### The repository contains code refered to the work:
+### The repository contains code refered to the work: A Neural Model Ensemble for Cyber-Threat Detection
 
 Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
 
