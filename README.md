@@ -5,8 +5,7 @@
 
 ### The repository contains code refered to the work: A Neural Model Ensemble for Cyber-Threat Detection
 
-Malik AL-Essa, Giuseppina Andresini, Annalisa Appice, Donato Malerba
-
+Please cite it as: AL-Essa, M., Andresini, G., Appice, A. et al. PANACEA: a neural model ensemble for cyber-threat detection. Mach Learn (2024). https://doi.org/10.1007/s10994-023-06470-2
 
 
 ![panacea](https://user-images.githubusercontent.com/38468857/159690725-7da25600-6caf-4601-b30a-bc575e64e16d.png)
